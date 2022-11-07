@@ -1,0 +1,3 @@
+boto3==1.5.31
+Flask==2.2.2
+Flask-Bootstrap==3.3.7.1

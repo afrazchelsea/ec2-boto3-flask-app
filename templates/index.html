@@ -1,0 +1,13 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Intuit Craft Assignment 1{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h2>Enter EC2 Instance ID</h2>
+        <form action="/metadata" class="ins-id-form" method="POST">
+            <p><input type="text" name="ins-id" id="ins-id" class="form-control-sm input-lg" placeholder="Instance ID"></p>
+            <button type="submit" name="submit" class="btn btn-primary btn-lg">Submit</button>  
+        </form>
+    </div>
+  
+{% endblock %}
