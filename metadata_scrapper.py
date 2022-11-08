@@ -22,9 +22,8 @@ def get_metadata(ins_id):
             data_list.append(ip_addr)
             data_list.append(ami_id)
             print(data_list)
-            break
+            return data_list
         else:
-            print("Instance Not Found")
+            return "Please cross-check Instance ID. Instance could be terminated or not exist at all."
 
-    return data_list
     

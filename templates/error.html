@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+{% block html_attribs %}lang="en"{% endblock %}
+{% block title %}Error Page{% endblock %}
+
+{% block content %}
+
+<div class="alert alert-danger" role="alert">
+    {{ data }}
+</div>
+<div class="text-center">
+    <h1>Error 404 : Not Found</h1>
+    <h3><a href="/">Return to homepage</a></h3>
+</div>
+
+{% endblock %}
+
+
+

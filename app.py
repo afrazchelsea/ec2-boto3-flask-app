@@ -12,10 +12,13 @@ def index():
 @app.route('/metadata', methods=['POST'])
 def data():
     ins_id = request.form.get('ins-id')
-    data_list = []
-    data_list = get_metadata(ins_id)
-    print(data_list)
-    return render_template('metadata.html', data=data_list)
+    response = []
+    response = get_metadata(ins_id)
+    print(response)
+    if type(response) != list:
+        return render_template('error.html', data=response) 
+    else:
+        return render_template('metadata.html', data=response)
 
 if __name__ == '__main__':
     app.run()

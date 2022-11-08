@@ -3,38 +3,41 @@
 {% block title %}Instance Metadata{% endblock %}
 
 {% block content %}
-  <div class="container">
-    <h3>Instance Info</h3>
-    <div class="rows">
-        <div>
-            <br>
-            <table class="table table-striped">
-                <tr>
-                    <th scope="col">Metadata</th>
-                    <th scope="col">Value</th>
-                </tr>
-                <tr>
-                    <td>Instance-id</td>
-                    <td>{{ data[0] }}</td>
-                </tr>
-                <tr>
-                    <td>Local-hostname</td>
-                    <td>{{ data[1]  }}</td>
-                </tr>
-                <tr>
-                    <td>Subnet ID</td>
-                    <td>{{ data[2]  }}</td>
-                </tr>
-                <tr>
-                    <td>IP Addr</td>
-                    <td>{{ data[3]  }}</td>
-                </tr>
-                <tr>
-                    <td>AMI ID</td>
-                    <td>{{ data[4]  }}</td>
-                </tr>                
-            </table>
+    <div class="container">
+        <h3 class="text-center">Instance Metadata Table</h3>
+        <div class="rows">
+            <div>
+                <br>
+                <table class="table table-striped">
+                    <tr>
+                        <th scope="col">Metadata</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                    <tr>
+                        <td>Instance-id</td>
+                        <td>{{ data[0] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Local-hostname</td>
+                        <td>{{ data[1]  }}</td>
+                    </tr>
+                    <tr>
+                        <td>Subnet ID</td>
+                        <td>{{ data[2]  }}</td>
+                    </tr>
+                    <tr>
+                        <td>IP Addr</td>
+                        <td>{{ data[3]  }}</td>
+                    </tr>
+                    <tr>
+                        <td>AMI ID</td>
+                        <td>{{ data[4]  }}</td>
+                    </tr>                
+                </table>
+            </div>
         </div>
     </div>
-  </div>
+    <div class="text-center">
+        <h4><u><a href="/">Return to homepage</a></u></h4>
+    </div>
 {% endblock %}
