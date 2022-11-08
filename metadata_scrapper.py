@@ -21,7 +21,6 @@ def get_metadata(ins_id):
             data_list.append(subnet)
             data_list.append(ip_addr)
             data_list.append(ami_id)
-            print(data_list)
             return data_list
         else:
             return "Please cross-check Instance ID. Instance could be terminated or not exist at all."
